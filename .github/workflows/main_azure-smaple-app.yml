@@ -23,9 +23,11 @@ jobs:
       run: |
         npm install
 
-    - name: 'Build the App'
+    # Removed the build step since it's missing
+    
+    - name: 'Start the App'
       run: |
-        npm run build  # Use 'npm run build' if your project has a build step, otherwise, use 'npm start'
+        npm start  # Use 'npm start' if your project does not have a build step
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
