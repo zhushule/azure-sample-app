@@ -58,7 +58,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'myFirstAzureApp'  # Ensure this matches the exact name of the Web App
+          app-name: 'myFristAzureApp'  # Ensure this matches the exact name of the Web App
           resource-group-name: 'myFirstAzureApp-rg'  # Correct the input name
           package: .  # Use the current directory if your build outputs here
           slot-name: 'production'  # Make sure the slot is correctly named (default is 'production')
