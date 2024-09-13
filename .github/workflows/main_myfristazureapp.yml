@@ -62,4 +62,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'myFirstAzureApp' # Ensure the app name matches exactly
+          resource-group: 'azure-app-rg'
           package: . # Use the current directory if your build outputs here
